@@ -1,0 +1,27 @@
+ .clock {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-family: sans-serif;
+    }
+    .clock .hour,
+    .clock .min,
+    .clock .sec {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .clock .text {
+      text-align: center;
+    }
+    .clock .val {
+      height: 45px;
+      margin: 2px;
+      background: #222;
+      color: #d2d0d0;
+      font-size: 21px;
+      text-align: center;
+      line-height: 45px;
+    } 

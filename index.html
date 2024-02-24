@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>class || 02</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="js/contentScript.js">
+</head>
+<body>
+      
+      <div class="clock">
+            <div class="hour">
+                <div class="text">HH</div>
+                <div class="val"></div>
+            </div>
+            <div class="min">
+                <div class="text">MM</div>
+                <div class="val"></div>
+            </div>
+            <div class="sec">
+                <div class="text">SS</div>
+                <div class="val"></div>
+            </div>
+    </div> 
+
+      <p id="demo"></p>
+
+      <script>
+            //statment
+            if(10>5){
+                  document.write("Hello Developer")
+            }
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+
+            var a = 20;
+            var b = 15;
+            if(a>b){
+                  document.write("Hi");
+            }
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+
+            //normal if
+            var name ="Mainuddin";
+            if(name == "Mainuddin"){
+                  document.write(" Yes I'm Mainuddin")
+            }
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+
+            //maltiple if example
+            var a=75;
+            if(a<60)
+            document.write("Failed");
+            if(a<=70 && a<60)
+            document.write("B");
+            
+            if(a>70 && a<100)
+            document.write("A");
+
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+
+            //Nested if Statement
+            var a=10;
+            if(a<12){
+                  if(a == 10){
+                        document.write("Thise is treu");
+                  }
+            }
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+
+            //if under else example
+
+            /*
+            var age=20;
+            if(age>=21){
+                  document.write("your age 24 years");
+            }else{
+                document.write("your age 25 ")  
+
+            }
+            */
+           var age = 10;
+           if(age>=21){
+            document.write("yor age 20");
+           }else if(age>=18){
+            document.write("yor age 18");
+
+           }else{
+            document.write("Not Found")
+           }
+
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+
+            //switch example
+            /*var a=3;
+            switch(a){
+                  case 0:
+                  document.write("one")
+                  break;
+
+                  case 1:
+                  document.write("two")
+                  break;
+
+                  case 2:
+                  document.write("three")
+                  break;
+
+                  case 3:
+                  document.write("four")
+                  break;
+
+                  case 4:
+                  document.write("five")
+                  break;
+            }*/
+
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+
+            var day;
+            switch(new Date().getDate()){
+                  case 0:
+                  day="sunday";
+                  break;
+
+                  case 1:
+                  day="monday";
+                  break;
+
+                  case 2:
+                  day="tuesday";
+                  break;
+
+                  case 3:
+                  day="Wednesday";
+                  break;
+
+                  case 4:
+                  day="Thursday";
+                  break;
+
+                  case 5:
+                  day="Friday";
+                  break;
+
+                  case 6:
+                  day="saturday";
+                  break;    
+
+            }
+            document.getElementById("demo").innerHTML ="to "+day;
+
+            //user define function
+
+            function name(){
+                  document.write("Hello Developer");
+
+                 
+            }
+
+            name();
+
+            function sun(){
+                  a = 2, b = 3;
+                  b = a+b;
+                  document.write(b);
+            }
+
+            sun();
+
+            function name(fname){
+                  document.write(" my name is:"+fname);
+            }
+
+             name("mainuddin");
+
+
+             function one(){
+                  console.log("hello developer");
+             }
+             one()
+      </script>
+
+      <div>
+            <script>
+
+                name();  
+            </script>
+      </div>   
+</body>
+</html>
